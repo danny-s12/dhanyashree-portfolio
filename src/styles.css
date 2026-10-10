@@ -1001,3 +1001,88 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     color: #fffdf7 !important;
   }
 }
+
+
+/* Consistent light-surface treatment for components missed by the palette pass. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(243, 240, 232, .94);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 1px 0 rgba(39,45,35,.06);
+}
+.app-shell { overflow: clip; }
+.contact-link,
+.contact-method,
+.social-card,
+.cert-item,
+.certification-item,
+.experience-card,
+.skill-card,
+.education-card,
+.panel,
+.quote-panel {
+  color: #20251f;
+  background: #fbf9f3;
+  border-color: #d9d4c8;
+}
+.contact-link,
+.contact-method,
+.social-card,
+.cert-item,
+.certification-item {
+  border: 1px solid #d9d4c8;
+  border-radius: 12px;
+}
+.contact-link *,
+.contact-method *,
+.social-card *,
+.cert-item *,
+.certification-item * {
+  color: #20251f;
+}
+.contact-link svg,
+.contact-method svg,
+.social-card svg,
+.cert-item svg,
+.certification-item svg {
+  color: #315b45;
+}
+.contact-link:hover,
+.contact-method:hover,
+.social-card:hover,
+.cert-item:hover,
+.certification-item:hover {
+  background: #f0eee5;
+  border-color: #aebda9;
+}
+.contact-layout .contact-side {
+  background: radial-gradient(ellipse at 50% 0%, rgba(184,194,164,.35), transparent 60%), #e8e8dc;
+}
+.contact-layout .contact-side .eyebrow,
+.contact-layout .contact-side h2,
+.contact-layout .contact-side p {
+  color: #20251f;
+}
+.contact-layout .contact-side .button-primary {
+  color: #fffdf7;
+  background: #315b45;
+}
+.contact-layout a:not(.button),
+.contact-layout .contact-email {
+  color: #315b45;
+}
+.cert-item .cert-number,
+.cert-item .cert-index,
+.certification-item .cert-number {
+  color: #777b6e;
+}
+.cert-item .cert-title,
+.certification-item .cert-title { color: #20251f; }
+
+@media (max-width: 640px) {
+  .site-header { isolation: isolate; }
+  .site-header .main-nav.open { z-index: 1001; }
+}
