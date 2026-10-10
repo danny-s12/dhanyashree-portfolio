@@ -765,3 +765,197 @@ body {
     animation: none !important; transition: none !important; translate: none !important;
   }
 }
+
+
+/* ================= WARM EDITORIAL PALETTE / OCT 2026 =================
+   Replace the familiar neon-violet AI look with paper, ink, forest and clay.
+   ===================================================================== */
+:root {
+  --bg: #f3f0e8;
+  --surface: #fbf9f3;
+  --surface2: #e9e5da;
+  --line: #d7d1c4;
+  --muted: #686b62;
+  --text: #20251f;
+  --accent: #315b45;
+  --accent2: #bd6848;
+  --green: #315b45;
+}
+html { background: #f3f0e8; }
+body {
+  color: #20251f;
+  background-color: #f3f0e8;
+  background-image:
+    radial-gradient(ellipse at 78% 0%, rgba(190, 164, 121, .15), transparent 34rem),
+    radial-gradient(ellipse at 0% 65%, rgba(88, 117, 87, .075), transparent 32rem),
+    linear-gradient(rgba(42, 47, 38, .028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 47, 38, .028) 1px, transparent 1px);
+  background-size: auto, auto, 64px 64px, 64px 64px;
+  background-attachment: fixed;
+}
+::selection { background: #315b45; color: #fffdf7; }
+.site-header {
+  background: rgba(243,240,232,.88);
+  border-bottom-color: rgba(39,45,35,.13);
+  backdrop-filter: blur(18px);
+}
+.brand-mark {
+  background: #315b45;
+  border-color: #315b45;
+  color: #f7f4eb;
+  box-shadow: none;
+}
+.brand-name, .main-nav, .nav-link { color: #20251f; }
+.nav-link:hover, .nav-link.active { color: #315b45; }
+.nav-resume { border-color: #315b45; color: #315b45; }
+.nav-resume:hover { background: #315b45; color: #fffdf7; }
+.hero .eyebrow, .eyebrow, .strip-label, .panel-number,
+.project-meta, .art-label, .experience-index {
+  color: #8d583f;
+}
+.hero h1, .page-heading h1, .detail-heading h1,
+.intro-strip h2, .section-title h2, .tech-band h2,
+.cta-panel h2, .project-card h3, .panel h2,
+.about-story h2, .contact-copy h2, .contact-side h2,
+.experience-main h2 {
+  color: #20251f;
+}
+.hero h1 .gradient-text {
+  background-image: linear-gradient(100deg, #315b45 0%, #47775a 65%, #bd6848 110%);
+  filter: none;
+}
+.hero-lede, .hero-secondary, .intro-strip > p,
+.project-card p, .page-intro, .tech-band p, .cta-panel p {
+  color: #555b50;
+}
+.button-primary {
+  background: #315b45;
+  color: #fffdf7;
+  border-color: #315b45;
+  box-shadow: 0 7px 20px rgba(49,91,69,.14);
+}
+.button-primary:hover { background: #254735; }
+.button-secondary {
+  color: #20251f;
+  border-color: #c7c1b4;
+  background: rgba(255,253,247,.62);
+}
+.button-secondary:hover { border-color: #315b45; background: #e8e6dc; }
+.hero-socials, .hero-socials a { color: #5c6258; }
+.hero-socials a:hover { color: #315b45; }
+.art-glow {
+  background: radial-gradient(circle, rgba(111,139,99,.23), rgba(189,104,72,.09) 43%, transparent 70%);
+}
+.art-card {
+  border-color: rgba(233,226,208,.2);
+  background: linear-gradient(145deg, #28392e, #18231d 80%);
+  box-shadow: 0 34px 85px rgba(34,39,30,.2), inset 0 1px rgba(255,255,255,.09);
+}
+.art-card-back {
+  background: linear-gradient(150deg, #d4d2bf, #b7c0ad);
+  border-color: rgba(49,91,69,.35);
+}
+.art-grid {
+  background-image: linear-gradient(rgba(236,229,211,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(236,229,211,.13) 1px, transparent 1px);
+}
+.art-label { color: #d7c4a4; }
+.art-code { color: #e9e5d7; }
+.floating-chip {
+  color: #26372c;
+  background: rgba(250,248,240,.94);
+  border-color: #d1cbbb;
+  box-shadow: 0 12px 35px rgba(40,45,35,.12);
+  backdrop-filter: blur(14px);
+}
+.intro-strip, .section-title, .footer, .site-header { border-color: rgba(39,45,35,.15); }
+.round-link {
+  color: #315b45;
+  border-color: #b8c3b4;
+  background: #e7e9df;
+}
+.text-link { color: #315b45; border-color: rgba(49,91,69,.35); }
+.home .section-block .project-card,
+.project-card, .panel, .quote-panel, .contact-side,
+.education-card, .skill-card, .experience-card {
+  color: #20251f;
+  border-color: #d9d4c8;
+  background: rgba(251,249,243,.94);
+  box-shadow: 0 8px 26px rgba(43,45,36,.045);
+}
+.home .section-block .project-card:hover,
+.project-card:hover {
+  border-color: #78927a;
+  box-shadow: 0 20px 45px rgba(43,67,47,.1);
+}
+.project-visual {
+  background:
+    radial-gradient(ellipse at 50% 10%, rgba(188,153,105,.28), transparent 55%),
+    linear-gradient(140deg, #dce0d3, #cbd5c8 65%, #e8d9c8);
+  border-bottom-color: #d3d5c8;
+}
+.visual-orbit { border-color: rgba(49,91,69,.32); }
+.orbit-two { border-color: rgba(189,104,72,.28); }
+.project-open {
+  color: #315b45;
+  background: rgba(251,249,243,.86);
+  border-color: rgba(49,91,69,.18);
+}
+.tag {
+  color: #465b49;
+  border-color: #d4dccf;
+  background: #edf0e7;
+}
+.project-details-link { color: #315b45; }
+.tech-band {
+  color: #f5f1e6;
+  border-color: #344e3b;
+  background:
+    radial-gradient(ellipse at 0% 100%, rgba(189,104,72,.15), transparent 52%),
+    linear-gradient(125deg, #294332, #1d2c22);
+}
+.tech-band h2, .tech-band p, .tech-band .eyebrow { color: #f5f1e6; }
+.tech-list span { border-color: rgba(246,242,229,.2); color: #e8e8da; }
+.tech-list b { color: #d9a17e; }
+.cta-panel {
+  color: #f5f1e6;
+  border-color: #304c39;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(189,104,72,.17), transparent 58%),
+    linear-gradient(120deg, #294332, #1d2c22);
+}
+.cta-panel h2, .cta-panel p { color: #f5f1e6; }
+.cta-icon { color: #f5f1e6; background: rgba(255,255,255,.1); }
+.cta-panel .button-primary { color: #25372b; background: #f3eee1; border-color: #f3eee1; }
+.cta-panel .button-primary:hover { background: #ded7c6; }
+.footer, .footer-links, .footer-brand, .footer-bottom { color: #62685d; }
+.footer a:hover { color: #315b45; }
+.page-heading .eyebrow, .detail-heading .eyebrow { color: #8d583f; }
+.timeline-marker {
+  color: #315b45;
+  background: #e5e9de;
+  border-color: #bfcdbb;
+}
+.skill-card-top > span { color: #8d583f; }
+.skill-tags span {
+  color: #465b49;
+  background: #edf0e7;
+  border-color: #d4dccf;
+}
+.contact-side {
+  background: radial-gradient(ellipse at 50% 0%, rgba(184,194,164,.35), transparent 60%), #e8e8dc;
+}
+.contact-side h2 { color: #20251f; }
+.note-box {
+  color: #465b49;
+  border-color: #cbd7c6;
+  background: #edf0e7;
+}
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline-color: #bd6848;
+}
+@media (max-width: 640px) {
+  .site-header { background: rgba(243,240,232,.95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
