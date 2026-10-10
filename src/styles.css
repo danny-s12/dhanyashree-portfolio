@@ -959,3 +959,45 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
 }
+
+
+/* Fix contrast issues reported from the deployed mobile and tablet views. */
+.hero-lede strong,
+.hero-copy .hero-lede strong {
+  color: #315b45 !important;
+  font-weight: 700;
+}
+.hero-lede { color: #555b50; }
+.menu-toggle {
+  color: #20251f;
+  border-color: #d1cbbb;
+  background: #fbf9f3;
+}
+.menu-toggle:hover { background: #e8e6dc; }
+@media (max-width: 640px) {
+  .site-header .main-nav.open {
+    background: #fbf9f3 !important;
+    color: #20251f;
+    border: 1px solid #d7d1c4;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(38, 43, 34, .2);
+  }
+  .site-header .main-nav.open .nav-link,
+  .site-header .main-nav.open .nav-resume {
+    color: #20251f !important;
+  }
+  .site-header .main-nav.open .nav-link:hover,
+  .site-header .main-nav.open .nav-link.active {
+    color: #315b45 !important;
+    background: #e9eee4;
+  }
+  .site-header .main-nav.open .nav-resume {
+    color: #fffdf7 !important;
+    background: #315b45;
+    border-color: #315b45;
+  }
+  .site-header .main-nav.open .nav-resume:hover {
+    background: #254735;
+    color: #fffdf7 !important;
+  }
+}
